@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLife.App", "WorkLife.App\WorkLife.App.csproj", "{63FC76FC-1432-4B54-B9A1-A23812BBC95C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLife.Model", "WorkLife.Model\WorkLife.Model.csproj", "{6395BFC3-C669-4ED9-B35A-139BC05FAE14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLife.Dal", "WorkLife.Dal\WorkLife.Dal.csproj", "{A1B4C4BD-3C08-44FE-BDA5-758040AF28EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLife.Dal.Test", "WorkLife.Dal.Test\WorkLife.Dal.Test.csproj", "{846F93D4-7B25-462C-8021-677B95484EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLife.Model.Contract", "WorkLife.Model.Contract\WorkLife.Model.Contract.csproj", "{DBEAFCA1-9F5F-413A-BB7D-F972D05E32B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLife.Dal.Contract", "WorkLife.Dal.Contract\WorkLife.Dal.Contract.csproj", "{40434C59-4CB9-4088-A569-580C7D550996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63FC76FC-1432-4B54-B9A1-A23812BBC95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FC76FC-1432-4B54-B9A1-A23812BBC95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FC76FC-1432-4B54-B9A1-A23812BBC95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FC76FC-1432-4B54-B9A1-A23812BBC95C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6395BFC3-C669-4ED9-B35A-139BC05FAE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6395BFC3-C669-4ED9-B35A-139BC05FAE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6395BFC3-C669-4ED9-B35A-139BC05FAE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6395BFC3-C669-4ED9-B35A-139BC05FAE14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B4C4BD-3C08-44FE-BDA5-758040AF28EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B4C4BD-3C08-44FE-BDA5-758040AF28EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B4C4BD-3C08-44FE-BDA5-758040AF28EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B4C4BD-3C08-44FE-BDA5-758040AF28EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{846F93D4-7B25-462C-8021-677B95484EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846F93D4-7B25-462C-8021-677B95484EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846F93D4-7B25-462C-8021-677B95484EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846F93D4-7B25-462C-8021-677B95484EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEAFCA1-9F5F-413A-BB7D-F972D05E32B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEAFCA1-9F5F-413A-BB7D-F972D05E32B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEAFCA1-9F5F-413A-BB7D-F972D05E32B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBEAFCA1-9F5F-413A-BB7D-F972D05E32B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40434C59-4CB9-4088-A569-580C7D550996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40434C59-4CB9-4088-A569-580C7D550996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40434C59-4CB9-4088-A569-580C7D550996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40434C59-4CB9-4088-A569-580C7D550996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73CC5E32-69B0-4AE5-9776-77E25866C0B7}
+	EndGlobalSection
+EndGlobal

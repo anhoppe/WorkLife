@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+<ItemGroup>
+    <InternalsVisibleTo Include="WorkLife.Dal.Test" />
+    <InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+</ItemGroup>
+
+<ItemGroup>
+  <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+</ItemGroup>
+
+<ItemGroup>
+  <ProjectReference Include="..\WorkLife.Dal.Contract\WorkLife.Dal.Contract.csproj" />
+</ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+﻿<Window x:Class="WorkLife.App.View.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkLife.App"
+        mc:Ignorable="d"
+        Title="Welcome to WorkLife! - Limited trial, no work time persistence" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Person:" />
+            <ComboBox Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Persons}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedPerson}"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Date:" />
+            <DatePicker Grid.Row="1" Grid.Column="1" SelectedDate="{Binding SelectedDate}"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Working Time:" />
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding WorkingTime, UpdateSourceTrigger=PropertyChanged}"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Margin="0, 30, 0, 0">
+                <Underline>Daily Values</Underline>
+            </TextBlock>
+            <TextBlock Text="{Binding DailyValuesText}" />
+            <TextBlock Margin="0, 30, 0, 0" >
+                <Underline>Monthly Values</Underline>
+            </TextBlock>
+            <TextBlock Text="{Binding MonthlyValuesText}" />
+        </StackPanel>
+
+        <Grid Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Content="Load" Command="{Binding Load}" Margin="10" />
+            <Button Grid.Column="1" Content="Save" Command="{Binding Save}"  Margin="10"  />
+            <Button Grid.Column="2" Content="Export" Command="{Binding ExportCommand}" Margin="10"  />
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿<Application x:Class="WorkLife.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WorkLife.App"
+             xmlns:view="clr-namespace:WorkLife.App.View"
+             StartupUri="View/MainWindowView.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
